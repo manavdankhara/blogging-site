@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSphere - Blogging Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Blog<span>Sphere</span></div>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#add-blog">Write Blog</a>
+            </div>
+
+            <button id="themeBtn">🌙</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Share Your <span>Story</span></h1>
+            <p>
+                Write, discover and share interesting ideas with the world.
+            </p>
+            <a href="#add-blog" class="btn">Write a Blog</a>
+        </div>
+    </section>
+
+    <!-- Search -->
+    <section class="search-section">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search blogs..."
+        >
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="Technology">Technology</option>
+            <option value="Education">Education</option>
+            <option value="Travel">Travel</option>
+            <option value="Lifestyle">Lifestyle</option>
+        </select>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blogs-section" id="blogs">
+
+        <h2>Latest Blogs</h2>
+
+        <div id="blogContainer" class="blog-container">
+            <!-- Blogs will appear here -->
+        </div>
+
+    </section>
+
+    <!-- Add Blog -->
+    <section class="add-section" id="add-blog">
+
+        <h2>Write Your Blog</h2>
+
+        <form id="blogForm">
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Blog Title"
+                required
+            >
+
+            <input
+                type="text"
+                id="author"
+                placeholder="Author Name"
+                required
+            >
+
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option value="Technology">Technology</option>
+                <option value="Education">Education</option>
+                <option value="Travel">Travel</option>
+                <option value="Lifestyle">Lifestyle</option>
+            </select>
+
+            <textarea
+                id="content"
+                rows="7"
+                placeholder="Write your blog here..."
+                required
+            ></textarea>
+
+            <button type="submit" class="btn">
+                Publish Blog
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 BlogSphere | Created using HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
